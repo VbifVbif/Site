@@ -1,0 +1,375 @@
+.menu {
+ 	height: 7%;
+	position: fixed;
+
+
+  background-color: #FFC0CB;
+}
+ .Menubut {
+ 	color: #ffffff;
+ 	font-family: "Cute";
+ 	font-size: 30px;
+}
+
+.mainimg{
+	position: fixed;
+	top: 100px;
+	height: 100%;
+	left: 0;
+}
+
+.Maintext{
+	position: fixed;
+	top: 300px;
+	color: #ffffff;
+	left: 30%;
+	font-family: "Cute";
+	font-size: 100px;
+}
+
+
+.Menu2{
+  font-family: Roboto;
+  background-color: #FCDDEC;
+  border-color: #ef5da8;
+  border-width: 4px;
+  font-size: 20px;
+  height: 50px;
+  width: 150px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1)
+  font-color: white;
+
+}
+
+
+
+.Product{
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	height: 1600px;
+	background-color: #ffffff;
+
+}
+
+.ProductBlock{
+position: relative;
+	left: 8%;
+	top: 200px;
+	width: 20%;
+	height: 400px;
+	background-color: #ffffff;
+	display: inline-block;
+	padding: 10px; 
+	border : 0;
+	 margin-left: 1%;
+	 margin-top: 30px;
+}
+
+.Productimg{
+	bottom: 35%;
+}
+
+.ProductName{
+	top: 65%;
+	font-size: 30px;
+	font-family: "Cute";
+}
+
+.ProductText{
+	top: 75%;
+	font-family: "Cute";	
+}
+
+.ButBuy{
+	position: absolute;
+	border-radius: 5px;
+	top: 87%;
+	background-color: #FFC0CB;
+	border: 0;
+	width: 130px;
+	height: 40px;
+	font-family: "Cute";
+	font-size: 20px; 
+	color: #ffffff;
+}
+
+.ButRec{
+position: absolute;
+border-radius: 5px;
+	top: 87%;
+	left: 50%;
+	background-color: #ffffff;
+	border: 0;
+	width: 130px;
+	height: 40px;
+	font-family: "Cute";
+	font-size: 20px; 
+	border : 2px solid #FFC0CB;
+	color: #FFC0CB;
+}
+
+.MBut{
+	position: fixed;
+	top: 60%;
+	left: 40%; 
+	width: 20%;
+	height: 50px;
+	
+	border: 0;
+	border-radius: 15px;
+	font-family: "Cute";
+	font-size: 40px;
+	color: #ffffff;
+
+
+
+}
+
+
+
+.shopping-cart {
+  width: 750px;
+  height: 423px;
+  margin: 600px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.10);
+  border-radius: 6px;
+ 
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: #5E6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+ 
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+ 
+.item:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+.delete-btn,
+.like-btn {
+  display: inline-block;
+  Cursor: pointer;
+}
+.delete-btn {
+  width: 18px;
+  height: 17px;
+  background: url("delete-icn.svg") no-repeat center;
+}
+ 
+.like-btn {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  background: url('twitter-heart.png');
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+}
+
+.is-active {
+  animation-name: animate;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  animation-fill-mode: forwards;
+}
+ 
+@keyframes animate {
+  0%   { background-position: left;  }
+  50%  { background-position: right; }
+  100% { background-position: right; }
+}
+
+.image {
+  margin-right: 50px;
+}
+ 
+Let’s add some basic style to  product name and description.
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+ 
+.description span {
+  display: block;
+  font-size: 14px;
+  color: #43484D;
+  font-weight: 400;
+}
+ 
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939E;
+}
+
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+ 
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+ 
+button:focus,
+input:focus {
+  outline:0;
+}
+.total-price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+ 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #7EC855;
+  font-family: 'Cute', sans-serif;
+}
+
+body{
+	background: url(img/cake2.jpg) no-repeat center center fixed;
+        background-size: cover;
+        
+}
+
+p{
+	position: absolute;
+}
+
+img{
+	position: absolute;
+}
+
+@font-face {
+font-family: "Cute"; 
+src: url("fonts/Cute.ttf") format("truetype");
+font-style: normal; 
+font-weight: normal; 
+}
+
+
+@font-face {
+font-family: "Roboto"; 
+src: url("fonts/Roboto.ttf") format("truetype");
+font-style: normal; 
+font-weight: normal; 
+}
+
+
+  #enscart_image_wrapper { 
+    background-color: #1170bb; /*Меняем цвет кнопки */
+  }
+  #enscart_wrapper {
+    top: auto; right: auto;
+    left: 10px; /* Привязываем к левому краю */
+    bottom: 20px; /* Привязываем к нижнему краю */
+  }
+
+
+
+  .btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.fourth {
+  border-color: #f1c40f;
+  color: #fff;
+  background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.fourth:hover {
+  background-position: 0;
+}
