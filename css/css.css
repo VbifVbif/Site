@@ -1,134 +1,225 @@
-.menu {
- 	height: 7%;
-	position: fixed;
+@charset "UTF-8";
 
-
-  background-color: #FFC0CB;
+.secMenu{
+  border-radius: 0;
+  border-color:#f59cca;
+  background: #fcdeed;
+  width: 80%;
+  height: 90%;
+  color: #303030;;
+  font-size: 150%;
+  box-shadow: 7px 7px 0 2px #FCDDEC;
 }
- .Menubut {
- 	color: #ffffff;
- 	font-family: "Cute";
- 	font-size: 30px;
+.secMenu:hover{
+	background: #fcbcdc;
+	color: #303030;;
+	border-color:#f59cca;
 }
 
-.mainimg{
-	position: fixed;
+.MainH1{
+	color: #303030;
+}
+
+.Dop{
+	color: #303030;
+	font-size: 20px;
 	top: 100px;
-	height: 100%;
-	left: 0;
 }
 
-.Maintext{
-	position: fixed;
-	top: 200px;
-	color: #ffffff;
-	text-align: left;
-	font-family: "Cute";
-	font-size: 100px;
+.category{
+	margin-left: 1rem;
+margin-top: 3rem;
+color: #bcbcbc;
+font-family: Roboto;
 }
 
-
-.Product{
-	position: absolute;
-	left: 0;
-	top: 100%;
-	width: 100%;
-	height: 1600px;
-	background-color: #ffffff;
-
-}
-
-.ProductBlock{
-position: relative;
-	left: 8%;
-	top: 100px;
-	width: 20%;
-	height: 400px;
-	background-color: #ffffff;
-	display: inline-block;
-	padding: 10px; 
-	border : 0;
-	 margin-left: 1%;
-	 margin-top: 30px;
-}
-
-.Productimg{
-	bottom: 35%;
-}
-
-.ProductName{
-	top: 65%;
+.price{
+	margin-left: 1rem;
+	font-weight: 1;
 	font-size: 30px;
-	font-family: "Cute";
+	font-family: Roboto;
 }
 
-.ProductText{
-	top: 75%;
-	font-family: "Cute";	
+.buybut{
+	margin-left: 1rem;
+	border-radius: 0;  
+	background: #303030;
+	 height: 50px ;
+	 width: 150px;
+	font-weight: 1;
+	font-size: 20px;
+	font-family: Roboto;
 }
 
-.ButBuy{
-	position: absolute;
-	border-radius: 5px;
-	top: 87%;
-	background-color: #FFC0CB;
-	border: 0;
-	width: 130px;
-	height: 40px;
-	font-family: "Cute";
-	font-size: 20px; 
-	color: #ffffff;
+.buybut:hover{
+	background:white;
+	color: #303030;
 }
 
-.ButRec{
-position: absolute;
-border-radius: 5px;
-	top: 87%;
-	left: 50%;
-	background-color: #ffffff;
-	border: 0;
-	width: 130px;
-	height: 40px;
-	font-family: "Cute";
-	font-size: 20px; 
-	border : 2px solid #FFC0CB;
-	color: #FFC0CB;
+.card1 {
+   position: relative;
+    width: 100%;
+  	
+    background: white;
+    overflow: hidden;
 }
 
-.MBut{
-	position: fixed;
-	top: 60%;
-	left: 40%; 
-	width: 20%;
-	height: 50px;
-	
-	border: 0;
-	border-radius: 15px;
-	font-family: "Cute";
-	font-size: 40px;
-	color: #ffffff;
+.card1 .imgBx,
+.card1 .details {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: .5s;
+}
 
+.card1 .details {
+    background: #262626;
+    top: 0;
+    left: 100%;
+    padding: 60px 30px;
+    margin-top: 3rem;
+}
 
+.card1:hover .imgBx {
+    top: 0;
+    left: -100%;
+}
+
+.card1:hover .details {
+    top: 0;
+    left: 0%;
+}
+
+.card1 .details h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #fff;
+
+}
+.card1 .details p {
+    margin: 20px 0 0;
+    color: #fff;
+}
+
+.cartbut{
+	margin-left: 3rem;
+	border-radius: 0;  
+	 height: 50px ;
+	 width: 300px;
+	font-weight: 1;
+	font-size: 20px;
+	font-family: Roboto;
+}
+.cartbut:hover{
+	background: #303030;
+}
+
+.card{
+	margin-top: 3rem;
 
 }
 
-body{
-	background: url(img/cake1.jpg) no-repeat center center fixed;
-        background-size: cover;
-        
+.menu_link{
+	position: relative;
+	color: white;
 }
 
-p{
-	position: absolute;
+.menu_link:hover{
+color: #efefef;
 }
 
-img{
-	position: absolute;
+.menu_link:hover:before{
+	transform: scaleX(1);
+	transition: transform 0.25s;
 }
+
+.menu_link:before{
+content: '';
+width: 100%;
+height: 1px;
+background-color: #efefef;
+position: absolute; 
+left: 0; bottom: -5px;
+transform: scaleX(0);
+transition: transform 0.25s;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+
 
 @font-face {
-font-family: "Cute"; 
-src: url("fonts/Cute.ttf") format("truetype");
+font-family: "Roboto"; 
+src: url("fonts/Roboto.ttf") format("truetype");
 font-style: normal; 
 font-weight: normal; 
 }
+	
+
+#doc_time {
+            font-family: Impact;
+            color: #999;
+            font-style: italic;
+            position: absolute;
+            top: 10px;
+            left: 30px;
+        }
+
+
+
+        .follow-cursor {
+            display: block;
+            width: 24px;
+            height: 24px;
+            border: 1px solid #dd8818;
+            border-radius: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            /* центрируем кружок */
+            position: absolute;
+            /* задаём абсолютное позиционирование, чтобы элемент не влиял на остальные элементы и его можно было бы позиционировать следом за курсором */
+            z-index: 999;
+            /* чтобы элемент был над остальными элементами */
+            pointer-events: none;
+            /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
+            transition: width 0.64s, height 0.64s, border-radius 0.64s, background 0.64s;
+        }
+
+        /* Активный класс для кружка при наведении на ссылку */
+        .follow-cursor_active {
+            height: 128px;
+            width: 128px;
+            border-width: 2px;
+            background: rgba(216, 139, 22, 0.32);
+        }
+
+        /* Скрываем декоративный элемент при ширине браузера меньше 992px */
+        @media (max-width: 991.98px) {
+            .follow-cursor {
+                display: none;
+            }
+        }
+
+        .glow {
+            font-size: 80px;
+            color: #fff;
+            text-align: center;
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #cf8f45, 0 0 40px #d68334, 0 0 50px #b8741b, 0 0 60px #b97721, 0 0 70px #d18119;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #e7581f, 0 0 40px #e63d1f, 0 0 50px #e02727, 0 0 60px #ec2d20, 0 0 70px #d1361b, 0 0 80px #cf4c24;
+            }
+        }
